@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        Acceso - SocialED
+    </title>
+</head>
+<body>
+<div id="container">
+    <a href="/">
+        SocialED
+    </a>
+    |
+    <a href="home">
+        Inicio
+    </a>
+    |
+    <a href="login">
+        Acceso
+    </a>
+    |
+    <a href="signup">
+        Registro
+    </a>
+    <h1>
+        Acceso
+    </h1>
+    <form action="processLogin" method="post" name="login">
+        <label for="email">
+            Email
+        </label>
+        <div class="inputs">
+            <input id="email" name="email" required="true" placeholder="Email" size="80" type="text" value=""/>
+        </div>
+        <label for="passwd">
+            Password
+        </label>
+        <div class="inputs">
+            <input id="passwd" name="passwd" required="true" placeholder="Password" size="80" type="password" value=""/>
+        </div>
+        <label for="remember_me">
+            <input id="remember_me" name="remember_me" type="checkbox" value="y"/>
+            No me olvides...
+        </label>
+        <div class="inputs">
+            <input id="login_submit" name="login_submit" type="submit" value="Acceso"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
+
+
+

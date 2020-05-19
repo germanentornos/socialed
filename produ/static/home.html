@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Inicio - SocialED</title>
+</head>
+<body>
+<div id="container">
+    <a href="/">SocialED</a> | <a href="home">Inicio</a> | <a href="login">Acceso</a> | <a href="signup">Registro</a>
+    <h1>Hola internauta, Qué tal estás?</h1>
+    <div>
+        <form action="processHome" method="post" name="home">
+            <label for="message">Escribe algo...</label>
+            <div class="inputs">
+                <input id="message" name="message" required="true"
+                       placeholder="Aquí tus bellas palabras..." maxlength="128" size="80"
+                       type="text" value=""/>
+                <input id="last" name="last" type="hidden" value=""/>
+            </div>
+            <div class="inputs">
+                <input id="post_submit" name="post_submit" type="submit" value="Post!"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

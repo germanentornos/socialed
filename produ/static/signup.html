@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        Registro - SocialED
+    </title>
+</head>
+<body>
+<div id="container">
+    <a href="/">
+        SocialED
+    </a>
+    |
+    <a href="home">
+        Inicio
+    </a>
+    |
+    <a href="login">
+        Acceso
+    </a>
+    |
+    <a href="signup">
+        Registro
+    </a>
+    <h1>
+        Registro
+    </h1>
+    <form action="processSignup" method="post" name="signup">
+        <label for="nickname">
+            Nickname
+        </label>
+        <div class="inputs">
+            <input id="nickname" name="nickname" required="true" placeholder="Nickname" size="80" type="text" value=""/>
+        </div>
+        <label for="email">
+            Email
+        </label>
+        <div class="inputs">
+            <input id="email" name="email" required="true" placeholder="Email" size="80" type="text" value=""/>
+        </div>
+        <label for="passwd">
+            Password
+        </label>
+        <div class="inputs">
+            <input id="passwd" name="passwd" required="true" placeholder="Password" size="80" type="password" value=""/>
+        </div>
+        <label for="confirm">
+            Repite Password
+        </label>
+        <div class="inputs">
+            <input id="confirm" name="confirm" required="true" placeholder="Password" size="80" type="password"
+                   value=""/>
+        </div>
+        <div class="inputs">
+            <input id="signup_submit" name="signup_submit" type="submit" value="Sign Up"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
