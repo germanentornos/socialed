@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <link href="static/css/socialed-style.css" rel="stylesheet" type="text/css"/>
+    <title>
+        Inicio - SocialED
+    </title>
+</head>
+<body>
+Hay errores encontrados en los siguientes campos:
+<ul>
+{% for input in inputs %}
+<li> {{ input }}</li>
+{% endfor %}
+</ul>
+<div>
+    <form action="{{ next }}" method="get">
+        <div class="inputs">
+            <input id="next" name="next" type="submit" value="Continue"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
