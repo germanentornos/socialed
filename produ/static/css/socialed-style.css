@@ -3,22 +3,24 @@
 
 #container {
   font-family: Helvetica, Geneva, Arial, sans-serif;
-  padding-left: 20px;
+    padding-top: 70px;
+  padding-left: 40px;
   background-color: #FFFFFF; /* beige */
   font-color: #2A2929; /* dark grey */
   margin: 10px;
 }
 a:link{
- color:black;
+ color:#ccc;
 
  }
 a:hover {
   color:green;
 }
 h1 {
-   color:blue;
+   color:#5da35b;
    font-size:20pt;
-
+    padding-bottom: 30px;
+    text-align: center;
 
 }
 form {
