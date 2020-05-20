@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <link href="static/css/socialed-style.css" rel="stylesheet" type="text/css"/>
+    <title>
+        Inicio - SocialED
+    </title>
+</head>
+<body>
+<div id="container">
+    <a href="/">
+        SocialED
+    </a>
+    |
+    <a href="/home">
+        Inicio
+    </a>
+    |
+    <a href="logout">
+        Salir ({{ nickname }})
+    </a>
+
+    <h1>
+        Hola {{nickname}}, Qué te trae por aquí?
+    </h1>
+    <div>
+        <form action="/profile" method="post" name="profile">
+            <label for="nickname">
+                Nickname
+            </label>
+            <div class="inputs">
+                <input id="nickname" maxlength="64" name="nickname" placeholder="Nickname" size="80" type="text"
+                       value="{{ nickname }}"/>
+            </div>
+            <label for="email">
+                Email
+            </label>
+            <div class="inputs">
+                <input id="email" name="email" placeholder="Email" size="80" type="text" value="{{ email }}" readonly/>
+            </div>
+            <label for="Friends">
+                Amiguetes (Pulsa Ctrl (windows) / Command (Mac) para selección multiple)
+            </label>
+            <div class="inputs">
+                <select name="friends" size="5" multiple>
+                    {% for option in all_users %}
+                    <option value="{{ option }} " {% if option in friends %} selected {% endif %}>{{ option }} </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <label for="passwd">
+                Nuevo Password
+            </label>
+            <div class="inputs">
+                <input id="passwd" name="passwd" placeholder="Password" size="80" type="password" value="{{ passwd }}"/>
+            </div>
+            <label for="confirm">
+                Se repetitivo con el Password
+                <div class="inputs">
+                    <input id="confirm" name="confirm" placeholder="Repeat Password" size="80" type="password"
+                           value="{{ passwd }}"/>
+                </div>
+                <div class="inputs">
+                    <input id="accept_submit" name="accept_submit" type="submit" value="Accept"/>
+                </div>
+            </label>
+        </form>
+    </div>
+</div>
+</body>
+</html>

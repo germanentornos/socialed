@@ -2,13 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="utf-8"/>
-    <title>SocialED</title>
     <link href="static/css/socialed-style.css" rel="stylesheet" type="text/css"/>
+    <title>SocialED</title>
 </head>
 <body>
 <div id="container">
-    <a href="/">SocialED </a>| <a href="home">Inicio</a> | <a href="login">Acceso </a>| <a href="signup">Registro</a>
-    <h1>Hola, Has llegado hasta SocialED</h1>
+    <a href="/">SocialED </a>|
+    {% if logged %}
+    <a href="home">Inicio</a> |
+    <a href="profile">
+        Perfil
+    </a>
+    |
+    <a href="logout">
+        Salir ({{ nickname }})
+    </a>
+    {% else %}
+    <a href="login">Acceso </a>| <a href="signup">Registro</a>
+    {% endif %}
+    <h1>Hola {{ nickname }} has llegado hasta SocialED</h1>
     <div>
         <p>Escoge <b>Registro</b> si eres un nuevo usuario</p>
         <p>Elige <b>Acceso</b> si eres nuevo en SocialED</p>

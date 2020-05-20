@@ -3,24 +3,22 @@
 
 #container {
   font-family: Helvetica, Geneva, Arial, sans-serif;
-    padding-top: 70px;
-  padding-left: 40px;
+  padding-left: 20px;
   background-color: #FFFFFF; /* beige */
   font-color: #2A2929; /* dark grey */
   margin: 10px;
 }
 a:link{
- color:#ccc;
+ color:black;
 
  }
 a:hover {
   color:green;
 }
 h1 {
-   color:#5da35b;
+   color:blue;
    font-size:20pt;
-    padding-bottom: 30px;
-    text-align: center;
+
 
 }
 form {
@@ -44,3 +42,52 @@ label {
 
 }
 
+#container {
+  font-family: Helvetica, Geneva, Arial, sans-serif;
+  padding-left: 20px;
+  background-color: #FFFFFF; /* beige */
+  font-color: #2A2929; /* dark grey */
+  margin: 10px;
+}
+a:link{
+  font-size: 120%;
+  text-decoration:none;
+}
+a:hover {
+  color:#cd7f32; /* light bronze */
+}
+h1 {
+  color: #d69544; /* bronze */
+  font-size: 200%;
+  margin: 20px;
+}
+form {
+  border: 2px solid #d69544; /* bronze */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  font-size: 120%;
+}
+label {
+  font-size: 110%;
+  padding: 5px;
+  text-align: left;
+  margin: 5px;
+}
+.inputs {
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  margin: 5px;
+}
+
+#left {
+  width:48%;
+  display: inline-block;
+}
+#right {
+  width: 48%;
+  float: right;
+  display: inline-block;
+  height: 100%;
+}
